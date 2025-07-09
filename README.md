@@ -1,6 +1,6 @@
 # Cloud-Architecture
 
--In this project, I am buidling and deploying a basic cloud architecture using AWS services and Terraform
+-In this project, I am building and deploying a basic cloud architecture using AWS services and Terraform
 
 The services i am using are:
   Internet Gateway, 
@@ -71,4 +71,36 @@ Within the same VPC folder, write 4 subnet resources and name them private subne
 
 ![Private Subnet 4 AZ](https://github.com/user-attachments/assets/ee633494-67d1-4d39-beac-554f4153a39a)
 
+
+# Security group file:
+
+Next, I want you to open security-groups.tf file.Here we will write and configure our security group resource 
+
+Security groups allow us to configure which network traffic we want allowed into our architecture but we can not control the network traffic going out
+
+Here is our public security group that will allow HTTPS traffic: 
+
+![Public Security Group](https://github.com/user-attachments/assets/9eabeb78-3164-46fb-97e5-9f967df975d5)
+
+![public_security_group_ingress_from_port](https://github.com/user-attachments/assets/0693a54e-6c9f-423e-be4c-5747f1868201)
+
+![public_security_group_ingress_to_port](https://github.com/user-attachments/assets/06aea6f7-6fc3-4b35-9ecf-aae5db1c20aa)
+
+![Pblic Security group from and to port](https://github.com/user-attachments/assets/03a28e4f-9058-4de8-8013-d5d54881ae2a)
+
+With the same file, Configure another security group but this security group will be a private security group(refer to architeture diagram)
+
+![Private Security Group 1](https://github.com/user-attachments/assets/4afa0307-6c52-440e-93fc-614ef2221085)
+
+![Private Security Group ingress from and to port ](https://github.com/user-attachments/assets/aa75c8c7-fc03-4845-82c1-03d4f842456a)
+
+![Private security group egress from and to port](https://github.com/user-attachments/assets/83bb7fea-3155-4542-b983-b9f821d024c7)
+
+Within the same file, Configure another security group resource and this one will be called private rds security group but you can name it anything:
+
+![private rds security group](https://github.com/user-attachments/assets/0ed0b44e-3104-46f8-966b-ca192cdf2ab4)
+
+![private rds security group ingress from and to port](https://github.com/user-attachments/assets/81abe317-b19f-497c-bf33-f86fa6a750c3)
+
+![private rds  security group egress from and to port](https://github.com/user-attachments/assets/b66f6203-4d05-48c2-8da9-f4cd1e0c0768)
 
