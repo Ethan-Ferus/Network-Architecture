@@ -104,3 +104,29 @@ Within the same file, Configure another security group resource and this one wil
 
 ![private rds  security group egress from and to port](https://github.com/user-attachments/assets/b66f6203-4d05-48c2-8da9-f4cd1e0c0768)
 
+# Route Table File:
+
+Create a new file called route-tables.tf.Here we will create our route table resources and our route table association resources
+
+A route table simply determines where network traffic is directed within a VPC and a route table association links a subnet to a specific route table
+
+In the route-table.tf file, configure your route table and name it "public route table"(refer to diagram)
+
+![public route table](https://github.com/user-attachments/assets/aee6b5ed-7c05-4ea4-8086-45d395b7a4a3)
+
+![public route table cidr block](https://github.com/user-attachments/assets/354276f2-c9cd-40a5-87f8-59c171661953)
+
+Within the same file, associate the public route table with public subnet 1 and public subnet 2
+
+![route table association](https://github.com/user-attachments/assets/871d7c04-ba77-443c-af37-24b7923b4dcb)
+
+Within the same file, configure another route table and name it "private route table"
+
+![Private route table ](https://github.com/user-attachments/assets/4230d981-9621-404c-9f27-d3cff424e7d2)
+
+![private route table cidr block](https://github.com/user-attachments/assets/c05906a4-3d3f-47c1-be4e-cf434ec3f50b)
+
+Within the same  file, associate the private route table with private subnet 1, private subnet 2, private subnet 3 and private subnet 4
+
+![private route table association](https://github.com/user-attachments/assets/f89d09df-4e7a-44b1-a1a4-594170c9e10f)
+
