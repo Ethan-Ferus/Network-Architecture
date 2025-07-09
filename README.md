@@ -1,5 +1,5 @@
-# Cloud-Architecture
-
+# Cloud Architecture
+      
 -In this project, I am building and deploying a basic cloud architecture using AWS services and Terraform
 
 The services i am using are:
@@ -129,4 +129,49 @@ Within the same file, configure another route table and name it "private route t
 Within the same  file, associate the private route table with private subnet 1, private subnet 2, private subnet 3 and private subnet 4
 
 ![private route table association](https://github.com/user-attachments/assets/f89d09df-4e7a-44b1-a1a4-594170c9e10f)
+
+# Deployment: 
+
+Once all the code is written in their respective files, pull up your terminal in VSCode and make sure you are in the correct directory
+
+Your first terraform command will be terraform init to initalize the projects folder.You'll see a terraform folder and a .terraform.lock.hcl file as well 
+
+Your next terraform command will be terraform plan to check if all your resources are correct, not necessary but you can if you want to. 
+
+![terraform plan](https://github.com/user-attachments/assets/33e9906d-aa62-4b1c-91ad-9a60ec18be00)
+
+![terraform plans](https://github.com/user-attachments/assets/04f145f7-4d39-4142-8496-5e5532d18fa2)
+
+Your next terraform command will be terraform apply to deploy your resources to AWS
+
+![terraform apply ](https://github.com/user-attachments/assets/c5dfb4e7-9a09-4f59-8602-fb8657728f3a)
+
+
+You will be prompted to a yes or no question if you want the resources deployed, type yes
+
+![Terraform apply yes](https://github.com/user-attachments/assets/e35539ce-662d-4f8d-81f8-95a9b8742299)
+
+When the resources are done deploying then it should look like the following below:
+
+![terraform apply done](https://github.com/user-attachments/assets/76d2db9b-b357-4ca2-86f8-65b33c75522a)
+
+Here are pictures of all the resources deployed in my AWS account
+
+![VPC deployment](https://github.com/user-attachments/assets/61950e22-606c-4976-86ef-3f89bb26448f)
+
+![Subnet deployment](https://github.com/user-attachments/assets/6942065d-8380-4855-8869-5d90cf7cbb14)
+
+![IGW Deployment](https://github.com/user-attachments/assets/5dddc10d-9456-4de9-bf61-ff7df28d55de)
+
+![SG Deployment](https://github.com/user-attachments/assets/a491ff63-d073-40eb-baf0-e19f4845a911)
+
+![Route Table Deployment](https://github.com/user-attachments/assets/b2c7b029-b44f-4c24-89da-9846491747c2)
+
+Once you are done and you want to clean up, in your VSCode terminal you write terraform destroy
+
+![Terraform destroy](https://github.com/user-attachments/assets/e1321877-79b3-4c8c-9302-cb43ebf043b2)
+
+![Terraform destroy ask](https://github.com/user-attachments/assets/dc1891bd-dee8-4303-b146-d905451b9b08)
+
+![Terraform destroy confirm](https://github.com/user-attachments/assets/e4aabce9-9529-4504-bbc7-eb29e9e29143)
 
