@@ -1,5 +1,5 @@
 # Cloud Architecture
- - Please refer to cloud architecture file as a reference
+ - Please refer to cloud architecture.excalidraw file as a reference
   
 -In this project, I am building and deploying a basic cloud architecture using AWS services and Terraform
 
