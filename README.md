@@ -1,5 +1,6 @@
 # Cloud Architecture
-      
+ - Please refer to cloud architecture file as a reference
+  
 -In this project, I am building and deploying a basic cloud architecture using AWS services and Terraform
 
 The services i am using are:
